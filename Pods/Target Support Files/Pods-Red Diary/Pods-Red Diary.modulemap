@@ -1,0 +1,6 @@
+framework module Pods_Red_Diary {
+  umbrella header "Pods-Red Diary-umbrella.h"
+
+  export *
+  module * { export * }
+}

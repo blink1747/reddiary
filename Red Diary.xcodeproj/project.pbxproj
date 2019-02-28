@@ -7,14 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B83BE7284434AC6EFDB0EBFA /* Pods_Red_Diary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D05AB257CC45ADFF3C4C132 /* Pods_Red_Diary.framework */; };
 		FB2088C522279ED80026A15F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2088C422279ED80026A15F /* AppDelegate.swift */; };
 		FB2088C722279ED80026A15F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2088C622279ED80026A15F /* ViewController.swift */; };
 		FB2088CA22279ED80026A15F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB2088C822279ED80026A15F /* Main.storyboard */; };
 		FB2088CC22279EDD0026A15F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB2088CB22279EDD0026A15F /* Assets.xcassets */; };
 		FB2088CF22279EDD0026A15F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB2088CD22279EDD0026A15F /* LaunchScreen.storyboard */; };
+		FB2088D922288E190026A15F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FB2088D822288E190026A15F /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		30CAE19093057B21FA37AA32 /* Pods-Red Diary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Red Diary.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Red Diary/Pods-Red Diary.debug.xcconfig"; sourceTree = "<group>"; };
+		6D05AB257CC45ADFF3C4C132 /* Pods_Red_Diary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Red_Diary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D19E2BF759E24A259314029 /* Pods-Red Diary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Red Diary.release.xcconfig"; path = "Pods/Target Support Files/Pods-Red Diary/Pods-Red Diary.release.xcconfig"; sourceTree = "<group>"; };
 		FB2088C122279ED80026A15F /* Red Diary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Red Diary.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB2088C422279ED80026A15F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FB2088C622279ED80026A15F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +27,7 @@
 		FB2088CB22279EDD0026A15F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB2088CE22279EDD0026A15F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FB2088D022279EDD0026A15F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB2088D822288E190026A15F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B83BE7284434AC6EFDB0EBFA /* Pods_Red_Diary.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3CAAF2808A5511CD6AE904B5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				30CAE19093057B21FA37AA32 /* Pods-Red Diary.debug.xcconfig */,
+				9D19E2BF759E24A259314029 /* Pods-Red Diary.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CF3952D0FE93D13AAE063BA4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6D05AB257CC45ADFF3C4C132 /* Pods_Red_Diary.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FB2088B822279ED80026A15F = {
 			isa = PBXGroup;
 			children = (
 				FB2088C322279ED80026A15F /* Red Diary */,
 				FB2088C222279ED80026A15F /* Products */,
+				3CAAF2808A5511CD6AE904B5 /* Pods */,
+				CF3952D0FE93D13AAE063BA4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +86,7 @@
 				FB2088CB22279EDD0026A15F /* Assets.xcassets */,
 				FB2088CD22279EDD0026A15F /* LaunchScreen.storyboard */,
 				FB2088D022279EDD0026A15F /* Info.plist */,
+				FB2088D822288E190026A15F /* GoogleService-Info.plist */,
 			);
 			path = "Red Diary";
 			sourceTree = "<group>";
@@ -71,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FB2088D322279EDD0026A15F /* Build configuration list for PBXNativeTarget "Red Diary" */;
 			buildPhases = (
+				6E6229428DE0A449CE1F8B2D /* [CP] Check Pods Manifest.lock */,
 				FB2088BD22279ED80026A15F /* Sources */,
 				FB2088BE22279ED80026A15F /* Frameworks */,
 				FB2088BF22279ED80026A15F /* Resources */,
+				637A31EDB51544F54DD5FA58 /* [CP] Embed Pods Frameworks */,
+				2A3B30D94F7FFD6840154F28 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -123,12 +153,69 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB2088CF22279EDD0026A15F /* LaunchScreen.storyboard in Resources */,
+				FB2088D922288E190026A15F /* GoogleService-Info.plist in Resources */,
 				FB2088CC22279EDD0026A15F /* Assets.xcassets in Resources */,
 				FB2088CA22279ED80026A15F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2A3B30D94F7FFD6840154F28 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Red Diary/Pods-Red Diary-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		637A31EDB51544F54DD5FA58 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Red Diary/Pods-Red Diary-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Red Diary/Pods-Red Diary-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6E6229428DE0A449CE1F8B2D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Red Diary-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FB2088BD22279ED80026A15F /* Sources */ = {
@@ -280,15 +367,13 @@
 		};
 		FB2088D422279EDD0026A15F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30CAE19093057B21FA37AA32 /* Pods-Red Diary.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 39ZJUMGGVX;
 				INFOPLIST_FILE = "Red Diary/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "AppsStudio.Red-Diary";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -298,15 +383,13 @@
 		};
 		FB2088D522279EDD0026A15F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D19E2BF759E24A259314029 /* Pods-Red Diary.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 39ZJUMGGVX;
 				INFOPLIST_FILE = "Red Diary/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "AppsStudio.Red-Diary";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
